@@ -43,7 +43,9 @@ namespace COMP2007_S2016_MidTerm
 
         protected void grdTodoList_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
+            grdTodoList.PageIndex = e.NewPageIndex;
 
+            GetTodos();
         }
 
         protected void grdTodoList_RowDeleting(object sender, GridViewDeleteEventArgs e)
