@@ -13,12 +13,39 @@ namespace COMP2007_S2016_MidTerm {
     public partial class TodoList {
         
         /// <summary>
-        /// grdTodoList control.
+        /// btnAddTodo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdTodoList;
+        protected global::System.Web.UI.WebControls.Button btnAddTodo;
+        
+        /// <summary>
+        /// lblPageSize control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPageSize;
+        
+        /// <summary>
+        /// ddlTodoListPageSize control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlTodoListPageSize;
+        
+        /// <summary>
+        /// TodoGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView TodoGridView;
     }
 }

@@ -34,6 +34,16 @@
                         </div>
                     </div>
                 </div>
+                <div class="form-group">
+                    <label for="txtTodoNotes" class="control-label">Completed: </label>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <asp:CheckBox ID="chkCompleted" runat="server" /> Yes
+                        </div>
+                        <div class="col-md-5">
+                        </div>
+                    </div>
+                </div>
                 <div class="text-right">
                     <div class="row">
                         <div class="col-md-7">
