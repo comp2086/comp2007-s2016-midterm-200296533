@@ -13,6 +13,7 @@
                 <h2>Todo List</h2>
             </div>
             <div class="col-md-8 col-md-offset-2">
+                <h4>Total Todos: <asp:Label ID="lblTotalTodos" runat="server" Text="Label"></asp:Label></h4>
                 <div class="btn-group" role="group">
                     <asp:Button ID="btnAddTodo" CssClass="btn btn-success" runat="server" Text="+ Add Todo" OnClick="btnAddTodo_Click" />
                 </div>

@@ -48,6 +48,12 @@ namespace COMP2007_S2016_MidTerm
                 var todos = (from _todos in db.Todos
                              select _todos);
 
+                // Get the total number of todo items
+                var totalTodos = todos.Count();
+
+                // Display the total
+                lblTotalTodos.Text = totalTodos.ToString();
+
                 // bind the result to the GridView
                 TodoGridView.DataSource = todos.AsQueryable().OrderBy(SortString).ToList();
                 TodoGridView.DataBind();
