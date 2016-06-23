@@ -31,6 +31,7 @@ namespace COMP2007_S2016_MidTerm
                 {
                     db.Todos.Add(newTodo);
                     db.SaveChanges();
+                    Response.Redirect("~/Todos/TodoList.aspx");
                 }
                 catch (Exception ex)
                 {

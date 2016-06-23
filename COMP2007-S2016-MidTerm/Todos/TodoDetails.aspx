@@ -6,7 +6,7 @@
             <div class="page-header">
                 <h2>Todo Details</h2>
             </div>
-            <div class="col-md-8 col-md-offset-3">
+            <div class="col-md-8 col-md-offset-2">
                 <!-- Form -->
                 <div class="form-group">
                     <label for="txtTodoName" class="control-label">Todo Name: </label>

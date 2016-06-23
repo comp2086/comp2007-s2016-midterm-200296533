@@ -6,7 +6,7 @@
             <div class="page-header">
                 <h2>Todo List</h2>
             </div>
-            <div class="col-md-8 col-md-offset-3">
+            <div class="col-md-8 col-md-offset-2">
                 <asp:GridView ID="grdTodoList" runat="server"
                     CssClass="table table-bordered table-striped table-hover"
                     AutoGenerateColumns="false" DataKeyNames="TodoID"

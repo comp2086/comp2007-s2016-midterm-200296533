@@ -130,8 +130,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="TodoDetails.aspx" />
-    <Content Include="TodoList.aspx" />
+    <Content Include="Todos\TodoDetails.aspx" />
+    <Content Include="Todos\TodoList.aspx" />
     <Content Include="User_Controls\Jumbotron.ascx" />
     <Content Include="User_Controls\Navbar.ascx" />
     <Content Include="Scripts\app.js" />
@@ -173,18 +173,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TodoModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="TodoDetails.aspx.cs">
+    <Compile Include="Todos\TodoDetails.aspx.cs">
       <DependentUpon>TodoDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TodoDetails.aspx.designer.cs">
+    <Compile Include="Todos\TodoDetails.aspx.designer.cs">
       <DependentUpon>TodoDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TodoList.aspx.cs">
+    <Compile Include="Todos\TodoList.aspx.cs">
       <DependentUpon>TodoList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TodoList.aspx.designer.cs">
+    <Compile Include="Todos\TodoList.aspx.designer.cs">
       <DependentUpon>TodoList.aspx</DependentUpon>
     </Compile>
     <Compile Include="User_Controls\Jumbotron.ascx.cs">

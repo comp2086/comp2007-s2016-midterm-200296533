@@ -15,8 +15,8 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li id="home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                <li id="todo" runat="server"><a href="TodoList.aspx"><i class="fa fa-list-alt fa-lg"></i> Todo List</a></li>
-                <li id="tododetails" runat="server"><a href="TodoDetails.aspx"><i class="fa fa-list-alt fa-lg"></i> Todo Details</a></li>
+                <li id="todo" runat="server"><a href="/Todos/TodoList.aspx"><i class="fa fa-list-alt fa-lg"></i> Todo List</a></li>
+                <li id="tododetails" runat="server"><a href="/Todos/TodoDetails.aspx"><i class="fa fa-list-alt fa-lg"></i> Todo Details</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
