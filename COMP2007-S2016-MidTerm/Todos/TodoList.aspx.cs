@@ -1,4 +1,11 @@
-﻿using System;
+﻿/**
+ * Todo List App
+ * By: Alex Andriishyn
+ * TodoList Page Code Behind file
+ * http://comp2007-s2016-midterm-200296533.azurewebsites.net/
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -24,6 +31,13 @@ namespace COMP2007_S2016_MidTerm
             }
         }
 
+        /**
+         * <summary>
+         * This method gets all todos from the DB
+         * </summary>
+         * 
+         * @returns {void}
+         */
         protected void GetTodos()
         {
             using (TodoConnection db = new TodoConnection())
@@ -41,6 +55,15 @@ namespace COMP2007_S2016_MidTerm
             }
         }
 
+        /**
+         * <summary>
+         * This event handler does pagination
+         * </summary>
+         * 
+         * @param {object} sender
+         * @param {GridViewSortEventArgs} e
+         * @returns {void}
+         */
         protected void TodoGridView_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             TodoGridView.PageIndex = e.NewPageIndex;
@@ -48,6 +71,15 @@ namespace COMP2007_S2016_MidTerm
             GetTodos();
         }
 
+        /**
+         * <summary>
+         * This event handler deletes a todo
+         * </summary>
+         * 
+         * @param {object} sender
+         * @param {GridViewSortEventArgs} e
+         * @returns {void}
+         */
         protected void TodoGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             // store which row was clicked
@@ -75,6 +107,15 @@ namespace COMP2007_S2016_MidTerm
             }
         }
 
+        /**
+         * <summary>
+         * This event handler does all sorting
+         * </summary>
+         * 
+         * @param {object} sender
+         * @param {GridViewSortEventArgs} e
+         * @returns {void}
+         */
         protected void TodoGridView_Sorting(object sender, GridViewSortEventArgs e)
         {
             var prevSortColumn = Session["SortColumn"].ToString();
@@ -100,6 +141,15 @@ namespace COMP2007_S2016_MidTerm
             GetTodos();
         }
 
+        /**
+         * <summary>
+         * This event handler renders a chevron according to the sort direction
+         * </summary>
+         * 
+         * @param {object} sender
+         * @param {GridViewRowEvenArgs} e
+         * @returns {void}
+         */
         protected void TodoGridView_RowDataBound(object sender, GridViewRowEventArgs e)
         {
             if (IsPostBack)
@@ -128,6 +178,15 @@ namespace COMP2007_S2016_MidTerm
             }
         }
 
+        /**
+         * <summary>
+         * This event handler updates todo with the new completed state
+         * </summary>
+         * 
+         * @param {object} sender
+         * @param {EventArgs} e
+         * @returns {void}
+         */
         protected void chkCompleted_CheckedChanged(object sender, EventArgs e)
         {
             // Get the clicked checkbox

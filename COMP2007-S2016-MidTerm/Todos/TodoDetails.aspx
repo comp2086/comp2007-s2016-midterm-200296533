@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="Todo Details" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="TodoDetails.aspx.cs" Inherits="COMP2007_S2016_MidTerm.TodoDetails" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <!-- 
+        Todo List App
+        By: Alex Andriishyn
+        TodoDetails Page file
+        http://comp2007-s2016-midterm-200296533.azurewebsites.net/
+        -->
      <div class="container">
         <div class="row">
             <div class="page-header">

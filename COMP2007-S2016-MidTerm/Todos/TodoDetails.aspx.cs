@@ -1,4 +1,11 @@
-﻿using System;
+﻿/**
+ * Todo List App
+ * By: Alex Andriishyn
+ * TodoDetails Page Code Behind file
+ * http://comp2007-s2016-midterm-200296533.azurewebsites.net/
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,6 +25,13 @@ namespace COMP2007_S2016_MidTerm
             }
         }
 
+        /**
+         * <summary>
+         * This method gets a todo from the DB
+         * </summary>
+         * 
+         * @returns {void}
+         */
         protected void GetTodo()
         {
             int TodoID = Convert.ToInt32(Request.QueryString["TodoID"]);
@@ -40,6 +54,15 @@ namespace COMP2007_S2016_MidTerm
             }
         }
 
+        /**
+         * <summary>
+         * This event handler saves a new todo/edits an existing one
+         * </summary>
+         * 
+         * @param {object} sender
+         * @param {EventArgs} e
+         * @returns {void}
+         */
         protected void btnSave_Click(object sender, EventArgs e)
         {
             // Create a new Todo item
@@ -83,6 +106,15 @@ namespace COMP2007_S2016_MidTerm
             }
         }
 
+        /**
+         * <summary>
+         * This event handler redirects to the default page
+         * </summary>
+         * 
+         * @param {object} sender
+         * @param {EventArgs} e
+         * @returns {void}
+         */
         protected void btnCancel_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Default.aspx");
